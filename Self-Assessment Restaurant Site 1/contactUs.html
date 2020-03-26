@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+    <font face = "Comic sans MS" size =" 4">
+
+    <head>
+    <meta charset="utf-8">
+    <title>Bob's Restaurant</title>
+    </head>
+
+    <body>
+
+        <center>
+            <h1>Bob's Restaurant</h1>
+        </center>
+        <hr />
+
+
+    <article id = "navBar">
+        <nav> <!-- The nav element will include navigation buttons or links -->
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contactUs.html">Contact Us</a>
+        </nav>
+    </article>
+    <hr/>
+
+
+<!--rest of the code goes here -->
+        <center>
+
+        <form action="submit.html" method="POST">
+
+            <label for="Name">Name :</label>
+            <input type="text" id="Name" name="Name"> <br />
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"> <br />
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"> <br />
+
+
+            <label for="reason">Reason for Inquiry:</label>
+            <select id="reason" name="contact">
+                <option value="Catering" selected>Catering</option>
+                <option value="Private Party">Private Party</option>
+                <option value="Feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+
+
+            <label for="info">Additional Information:</label>
+            <textarea id="info" name="info"></textarea><br>
+
+
+
+
+
+
+
+                <p>Have you been to the restaurant?
+                    <input type="radio" id="choice2" name="questionnaire" value="no">
+                    <label for="choice2">No</label>
+                    <input type="radio" id="choice1" name="questionnaire" value="yes">
+                    <label for="choice1">Yes</label></p>
+
+
+
+
+            <articl id = "dayPicker">
+
+                <p>Best days to contact you:
+                <input type="checkbox" id="monday" name="interest" value="monday">
+                <label for="monday">M</label>
+
+                <input type="checkbox" id="tuesday" name="interest" value="tuesday">
+                <label for="tuesday">T</label>
+
+                <input type="checkbox" id="wednesday" name="interest" value="wednesday">
+                <label for="wednesday">W</label>
+
+
+                <input type="checkbox" id="thursday" name="interest" value="thursday">
+                <label for="thursday">Th</label>
+
+                <input type="checkbox" id="friday" name="interest" value="friday">
+                    <label for="friday">F</label> </p>
+
+
+            </articl>
+
+
+
+
+
+
+            <input type="submit" name="sendRequest" value="Send Request">
+
+
+        </form>
+        </center>
+
+
+
+
+        <!--rest of the code goes here -->
+
+
+
+    <hr/>
+    <center>
+        <p>123 Sesame Street, New York City, NY, 11373</p>
+        <p>Telephone: 1-123-456-7890</p>
+    </center>
+
+    </body>
+
+        <font face = "Comic sans MS" size =" 3">
+</html>
