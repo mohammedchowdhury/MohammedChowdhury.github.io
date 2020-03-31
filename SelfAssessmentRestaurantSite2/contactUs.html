@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    
+        <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+
+
+
+    <meta charset="utf-8">
+    <title>Bob's Restaurant</title>
+
+
+    </head>
+
+    <body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <font face = "Comic sans MS" size =" 3">
+
+
+    <div class="jumbotron">
+    <center><h1 face = "Comic sans MS" size =" 3">Bob's Restaurant</h1></center> 
+    </div>
+
+
+
+    <div class="container">
+
+            <div class="row">
+
+                 <div class="col-lg-3 col-md-12">
+                          
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-12">
+                    <nav>
+                        <a  class="btn" href="index.html">Home</a>
+                    </nav>     
+
+                </div>
+
+
+                 <div class="col-lg-2 col-md-12">
+                    <nav>
+                        <a  class="btn" href="menu.html">Menu</a>
+                    </nav>     
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-12">
+                    <nav>
+                        <a  class="btn" href="contactUs.html">Contact US</a>
+                    </nav>     
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-12">
+                          
+
+                </div>
+
+            </div>
+    </div>
+
+
+
+    <hr/>
+
+
+
+<!--rest of the code goes here -->
+    <form action="submit.html" method="POST">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-1">
+                    
+                 </div>
+
+
+                 <div class="col-lg-1 col-sm-2">
+                     <center> <label for="Name">Name:</label> </center>
+                 </div>
+
+                <div class="col-lg-6 col-sm-9">
+                     <input type="text" id="Name" name="Name"> <br />
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-1">
+                    
+                 </div>
+
+
+                 <div class="col-lg-1 col-sm-2">
+                     <center> <label for="email">Email:</label></center>
+                 </div>
+
+                <div class="col-lg-6 col-sm-9">
+                       <input type="text" id="email" name="email"> <br />
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-1">
+                    
+                 </div>
+
+
+                 <div class="col-lg-1 col-sm-2">
+                     <center>  <label for="phone">Phone:</label></center>
+                 </div>
+
+                <div class="col-lg-6 col-sm-9">
+                       <input type="text" id="phone" name="phone"> <br />
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-3 col-sm-1">
+                    
+                 </div>
+
+
+                 <div class="col-lg-2 col-sm-2">
+                      <label for="reason">Reason for Inquiry:</label>
+                 </div>
+
+                <div class="col-lg-6 col-sm-9">
+                       <select id="reason" name="contact">
+                            <option value="Catering" selected>Catering</option>
+                            <option value="Private Party">Private Party</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-2 col-sm-1">
+                    
+                 </div>
+
+
+                 <div class="col-lg-3 col-sm-2">
+                       <label for="info">Additional Information:</label>
+                 </div>
+
+                <div class="col-lg-6 col-sm-9">
+                       <textarea id="info" name="info"></textarea><br>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-2 col-sm-1">
+                    
+                 </div>
+
+
+                 <div class="col-lg-3 col-sm-2">
+                      <p>Have you been to the restaurant?</p>
+                 </div>
+
+                <div class="col-lg-6 col-sm-9">
+                     <p><input type="radio" id="choice2" name="questionnaire" value="no">
+                    <label for="choice2">No</label>
+                    <input type="radio" id="choice1" name="questionnaire" value="yes">
+                    <label for="choice1">Yes</label></p>
+                      
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-lg-2 col-sm-1">
+                    
+                 </div>
+
+
+                 <div class="col-lg-3 col-sm-2">
+                       <p>Best days to contact you:</p>
+                 </div>
+
+                <div class="col-lg-6 col-sm-9">
+                    <p> <input type="checkbox" id="monday" name="interest" value="monday">
+                <label for="monday">M</label>
+
+                <input type="checkbox" id="tuesday" name="interest" value="tuesday">
+                <label for="tuesday">T</label>
+
+                <input type="checkbox" id="wednesday" name="interest" value="wednesday">
+                <label for="wednesday">W</label>
+
+
+                <input type="checkbox" id="thursday" name="interest" value="thursday">
+                <label for="thursday">Th</label>
+
+                <input type="checkbox" id="friday" name="interest" value="friday">
+                    <label for="friday">F</label> </p>
+                      
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-lg-6 col-sm-6">
+                    
+                 </div>
+                    <input type="submit" name="sendRequest" value="Send Request">
+                 <div class="col-lg-1 col-sm-1">
+                      
+                 </div>
+
+            </div>
+
+        </div>
+
+
+        </form>
+     
+
+    <hr/>
+    <center>
+        <p>123 Sesame Street, New York City, NY, 11373</p>
+        <p>Telephone: 1-123-456-7890</p>
+    </center>
+
+    </body>
+
+        <font face = "Comic sans MS" size =" 3">
+</html>
