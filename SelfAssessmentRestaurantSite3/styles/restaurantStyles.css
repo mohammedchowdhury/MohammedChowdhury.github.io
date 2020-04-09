@@ -1,0 +1,28 @@
+.jumbotron{
+background-color:#f0f0f5;
+}
+
+
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: pink;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+form{
+font-weight: bold;
+	
+}
