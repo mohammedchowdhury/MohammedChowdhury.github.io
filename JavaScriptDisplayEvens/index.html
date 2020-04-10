@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Display Evens</title>
+  </head>
+  <body>
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+    <div class="container">
+    	 <h1>Display Evens</h1>
+  		<div class="row">
+    		<div class="col-md-3" id = "texts" >
+      			  	<label for="firstNumber">Starting Number</label><br>  
+    		</div>
+    		
+    		<div class="col-md-6">
+      				<input type="number" id="firstNumber" name="firstNumber"><br>
+    		</div>
+  		</div>
+
+  		<div class="row">
+    		<div class="col-md-3" id = "texts" >
+      			  	<label for="endingNumber">Ending Number</label><br>  
+    		</div>
+    		
+    		<div class="col-md-6">
+      				<input type="number" id="endingNumber" name="endingNumber"><br>
+    		</div>
+  		</div>
+
+
+  		<div class="row">
+    		<div class="col-md-3" id = "texts" >
+      			  	<label for="step">Step</label><br>  
+    		</div>
+    		
+    		<div class="col-md-6">
+      				<input type="number" id="step" name="step"><br>
+    		</div>
+  		</div>
+
+
+  		<div class="row">
+    		<div class="col-md-4" id = "texts">
+      			  	<button  onclick="myFunction()" type="button" class="btn btn-dark">Display Evens</button><br><br>
+    		</div>
+    		
+    		
+  		</div>
+
+	<p id = "showResult"></p>
+	<p id = "ans"></p>
+
+	</div>
+
+
+
+	<script type="text/javascript">
+		function myFunction(){
+			let start = parseInt(document.getElementById("firstNumber").value);
+			let stop = parseInt(document.getElementById("endingNumber").value);
+			let step = parseInt(document.getElementById("step").value);
+
+			// console.log(start); console.log(stop); console.log(step); 
+
+			if(start>stop || start===stop){
+				alert("Starting number has to be smaller than Ending Number "); 
+				return; 
+			}
+			// if(start===stop){
+			// 	alert("Starting number has to be smaller than Ending Number "); 
+			// 	return; 
+			// }
+
+			if((stop-start)<step){
+				alert("Step number has to be smaller"); 
+				return; 
+			}
+
+			document.getElementById("showResult").innerHTML = "Here are the even numbers between "+start+" and "+stop+" by "+step+" 's:"; 
+
+			console.log(start*stop);
+			let answer = ""; 
+			for(let x = start ; x<=stop; x =x+step){
+				if(x%2===0){
+					answer = answer+x+'<br>'; 
+				}
+			}
+			document.getElementById("ans").innerHTML = answer; 
+		}
+	</script>
+	<style>
+		#texts{
+  			text-align: right;
+		}
+		.container{
+			font-family: "Comic Sans MS"; 
+		}
+
+	</style>
+
+
+
+
+  </body>
+</html>
