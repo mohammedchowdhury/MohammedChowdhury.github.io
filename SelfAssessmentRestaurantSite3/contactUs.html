@@ -22,6 +22,8 @@
 
     </head>
 
+    <noscript>Your browser does not support JavaScript!</noscript>
+
     <body>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -87,7 +89,7 @@
 
 
 <!--rest of the code goes here -->
-    <form action="submit.html" method="POST">
+    <form method="POST" onsubmit="return false">
         <div class="container">
 
             <div class="row">
@@ -138,7 +140,7 @@
                  </div>
 
                 <div class="col-lg-6 col-sm-9">
-                       <input  type="tel" id="phone" name="phone" placeholder="Enter your Number"> <br />
+                         <input type="tel" id="phone" name="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 </div>
 
             </div>
@@ -247,7 +249,7 @@
                 <div class="col-lg-6 col-sm-6">
                     
                  </div>
-                    <input type="submit" name="sendRequest" value="Send Request">
+                    <button onclick="validateMe()" type="button" class="btn btn-dark">Submit</button>
                  <div class="col-lg-1 col-sm-1">
                       
                  </div>
@@ -271,3 +273,38 @@
 
         <font face = "Comic sans MS" size =" 3">
 </html>
+
+
+<script type="text/javascript">
+
+    function validateMe(){
+        let name = document.getElementById("Name").value;
+        let email = document.getElementById("email").value;
+        let phone =document.getElementById("phone").value;
+
+        console.log(name,email,phone); 
+
+        let trigger = false; 
+
+        if(name===""){
+            alert("Missing Name")
+            trigger = true; 
+        }
+        if(email==="" && trigger===false){
+            alert("Missing Email")
+            trigger = true; 
+        }
+        if(phone==="" && trigger===false){
+            alert("Missing Phone")
+            trigger = true; 
+        }
+
+        if(trigger === true){
+            return; 
+        }
+        else{
+            window.location.href = "http://www.macMohammed.com";
+        }
+    }
+    
+</script>
