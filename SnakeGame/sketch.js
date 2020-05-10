@@ -16,16 +16,16 @@ let pp;
 
 function preload() {
   soundFormats('mp3');
-  eatSound = loadSound('laugh.mp3');
-  dieSound = loadSound('laugh.mp3');              
-  gameSound = loadSound('laugh.mp3');
-  winnerSound = loadSound('laugh.mp3'); 
-
-
-  //   eatSound = loadSound('bill.mp3');
+  // eatSound = loadSound('laugh.mp3');
   // dieSound = loadSound('laugh.mp3');              
-  // gameSound = loadSound('gameMusic.mp3');
-  // winnerSound = loadSound("ENCORE.mp3"); 
+  // gameSound = loadSound('laugh.mp3');
+  // winnerSound = loadSound('laugh.mp3'); 
+
+
+    eatSound = loadSound('bill.mp3');
+  dieSound = loadSound('laugh.mp3');              
+  gameSound = loadSound('gameMusic.mp3');
+  winnerSound = loadSound("ENCORE.mp3"); 
 }
 
 function setup() {
